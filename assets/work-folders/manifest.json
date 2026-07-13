@@ -1,0 +1,997 @@
+[
+  {
+    "slug": "ai-cleaner",
+    "folder": "AI洗地机",
+    "kicker": "01 / AI CLEANER",
+    "title": "AI洗地机",
+    "desc": "按原始文件夹归类的作品子集",
+    "count": 9,
+    "cover": "assets/work-folders/ai-cleaner/cover.webp",
+    "thumbs": [
+      "assets/work-folders/ai-cleaner/thumb-1.webp",
+      "assets/work-folders/ai-cleaner/thumb-2.webp",
+      "assets/work-folders/ai-cleaner/thumb-3.webp"
+    ],
+    "items": [
+      {
+        "thumb": "assets/work-folders/ai-cleaner/item-01.webp",
+        "large": "assets/work-folders/ai-cleaner/large-01.webp",
+        "full": "assets/work-folders/ai-cleaner/full-01.png",
+        "source": "微信图片_20260515104851_464_111.png"
+      },
+      {
+        "thumb": "assets/work-folders/ai-cleaner/item-02.webp",
+        "large": "assets/work-folders/ai-cleaner/large-02.webp",
+        "full": "assets/work-folders/ai-cleaner/full-02.png",
+        "source": "微信图片_20260515104852_465_111.png"
+      },
+      {
+        "thumb": "assets/work-folders/ai-cleaner/item-03.webp",
+        "large": "assets/work-folders/ai-cleaner/large-03.webp",
+        "full": "assets/work-folders/ai-cleaner/full-03.jpg",
+        "source": "微信图片_20260515104853_466_111.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/ai-cleaner/item-04.webp",
+        "large": "assets/work-folders/ai-cleaner/large-04.webp",
+        "full": "assets/work-folders/ai-cleaner/full-04.png",
+        "source": "微信图片_20260515104855_467_111.png"
+      },
+      {
+        "thumb": "assets/work-folders/ai-cleaner/item-05.webp",
+        "large": "assets/work-folders/ai-cleaner/large-05.webp",
+        "full": "assets/work-folders/ai-cleaner/full-05.png",
+        "source": "微信图片_20260515104931_468_111.png"
+      },
+      {
+        "thumb": "assets/work-folders/ai-cleaner/item-06.webp",
+        "large": "assets/work-folders/ai-cleaner/large-06.webp",
+        "full": "assets/work-folders/ai-cleaner/full-06.jpg",
+        "source": "微信图片_20260515104932_469_111.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/ai-cleaner/item-07.webp",
+        "large": "assets/work-folders/ai-cleaner/large-07.webp",
+        "full": "assets/work-folders/ai-cleaner/full-07.png",
+        "source": "微信图片_20260515104935_470_111.png"
+      },
+      {
+        "thumb": "assets/work-folders/ai-cleaner/item-08.webp",
+        "large": "assets/work-folders/ai-cleaner/large-08.webp",
+        "full": "assets/work-folders/ai-cleaner/full-08.jpg",
+        "source": "微信图片_20260515104940_471_111.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/ai-cleaner/item-09.webp",
+        "large": "assets/work-folders/ai-cleaner/large-09.webp",
+        "full": "assets/work-folders/ai-cleaner/full-09.png",
+        "source": "微信图片_20260515104944_472_111.png"
+      }
+    ],
+    "sources": [
+      "微信图片_20260515104851_464_111.png",
+      "微信图片_20260515104852_465_111.png",
+      "微信图片_20260515104853_466_111.jpg",
+      "微信图片_20260515104855_467_111.png",
+      "微信图片_20260515104931_468_111.png",
+      "微信图片_20260515104932_469_111.jpg",
+      "微信图片_20260515104935_470_111.png",
+      "微信图片_20260515104940_471_111.jpg",
+      "微信图片_20260515104944_472_111.png"
+    ]
+  },
+  {
+    "slug": "ai-audio",
+    "folder": "AI耳机",
+    "kicker": "02 / AI AUDIO",
+    "title": "AI耳机",
+    "desc": "按原始文件夹归类的作品子集",
+    "count": 9,
+    "cover": "assets/work-folders/ai-audio/cover.webp",
+    "thumbs": [
+      "assets/work-folders/ai-audio/thumb-1.webp",
+      "assets/work-folders/ai-audio/thumb-2.webp",
+      "assets/work-folders/ai-audio/thumb-3.webp"
+    ],
+    "items": [
+      {
+        "thumb": "assets/work-folders/ai-audio/item-01.webp",
+        "large": "assets/work-folders/ai-audio/large-01.webp",
+        "full": "assets/work-folders/ai-audio/full-01.png",
+        "source": "微信图片_20260515104951_473_111.png"
+      },
+      {
+        "thumb": "assets/work-folders/ai-audio/item-02.webp",
+        "large": "assets/work-folders/ai-audio/large-02.webp",
+        "full": "assets/work-folders/ai-audio/full-02.png",
+        "source": "微信图片_20260515104953_474_111.png"
+      },
+      {
+        "thumb": "assets/work-folders/ai-audio/item-03.webp",
+        "large": "assets/work-folders/ai-audio/large-03.webp",
+        "full": "assets/work-folders/ai-audio/full-03.png",
+        "source": "微信图片_20260515104956_475_111.png"
+      },
+      {
+        "thumb": "assets/work-folders/ai-audio/item-04.webp",
+        "large": "assets/work-folders/ai-audio/large-04.webp",
+        "full": "assets/work-folders/ai-audio/full-04.png",
+        "source": "微信图片_20260515104958_476_111.png"
+      },
+      {
+        "thumb": "assets/work-folders/ai-audio/item-05.webp",
+        "large": "assets/work-folders/ai-audio/large-05.webp",
+        "full": "assets/work-folders/ai-audio/full-05.png",
+        "source": "微信图片_20260515105000_477_111.png"
+      },
+      {
+        "thumb": "assets/work-folders/ai-audio/item-06.webp",
+        "large": "assets/work-folders/ai-audio/large-06.webp",
+        "full": "assets/work-folders/ai-audio/full-06.png",
+        "source": "微信图片_20260515105002_478_111.png"
+      },
+      {
+        "thumb": "assets/work-folders/ai-audio/item-07.webp",
+        "large": "assets/work-folders/ai-audio/large-07.webp",
+        "full": "assets/work-folders/ai-audio/full-07.png",
+        "source": "微信图片_20260515105003_479_111.png"
+      },
+      {
+        "thumb": "assets/work-folders/ai-audio/item-08.webp",
+        "large": "assets/work-folders/ai-audio/large-08.webp",
+        "full": "assets/work-folders/ai-audio/full-08.png",
+        "source": "微信图片_20260515105629_480_111.png"
+      },
+      {
+        "thumb": "assets/work-folders/ai-audio/item-09.webp",
+        "large": "assets/work-folders/ai-audio/large-09.webp",
+        "full": "assets/work-folders/ai-audio/full-09.png",
+        "source": "微信图片_20260515105631_481_111.png"
+      }
+    ],
+    "sources": [
+      "微信图片_20260515104951_473_111.png",
+      "微信图片_20260515104953_474_111.png",
+      "微信图片_20260515104956_475_111.png",
+      "微信图片_20260515104958_476_111.png",
+      "微信图片_20260515105000_477_111.png",
+      "微信图片_20260515105002_478_111.png",
+      "微信图片_20260515105003_479_111.png",
+      "微信图片_20260515105629_480_111.png",
+      "微信图片_20260515105631_481_111.png"
+    ]
+  },
+  {
+    "slug": "portrait",
+    "folder": "人像",
+    "kicker": "03 / PORTRAIT",
+    "title": "人像",
+    "desc": "按原始文件夹归类的作品子集",
+    "count": 9,
+    "cover": "assets/work-folders/portrait/cover.webp",
+    "thumbs": [
+      "assets/work-folders/portrait/thumb-1.webp",
+      "assets/work-folders/portrait/thumb-2.webp",
+      "assets/work-folders/portrait/thumb-3.webp"
+    ],
+    "items": [
+      {
+        "thumb": "assets/work-folders/portrait/item-01.webp",
+        "large": "assets/work-folders/portrait/large-01.webp",
+        "full": "assets/work-folders/portrait/full-01.jpg",
+        "source": "微信图片_2026-05-15_103541_891.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/portrait/item-02.webp",
+        "large": "assets/work-folders/portrait/large-02.webp",
+        "full": "assets/work-folders/portrait/full-02.jpg",
+        "source": "微信图片_2026-05-15_103600_610.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/portrait/item-03.webp",
+        "large": "assets/work-folders/portrait/large-03.webp",
+        "full": "assets/work-folders/portrait/full-03.jpg",
+        "source": "微信图片_2026-05-15_103603_458.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/portrait/item-04.webp",
+        "large": "assets/work-folders/portrait/large-04.webp",
+        "full": "assets/work-folders/portrait/full-04.jpg",
+        "source": "微信图片_2026-05-15_103606_201.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/portrait/item-05.webp",
+        "large": "assets/work-folders/portrait/large-05.webp",
+        "full": "assets/work-folders/portrait/full-05.jpg",
+        "source": "微信图片_2026-05-15_103608_682.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/portrait/item-06.webp",
+        "large": "assets/work-folders/portrait/large-06.webp",
+        "full": "assets/work-folders/portrait/full-06.jpg",
+        "source": "微信图片_2026-05-15_103611_436.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/portrait/item-07.webp",
+        "large": "assets/work-folders/portrait/large-07.webp",
+        "full": "assets/work-folders/portrait/full-07.jpg",
+        "source": "微信图片_2026-05-15_103613_947.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/portrait/item-08.webp",
+        "large": "assets/work-folders/portrait/large-08.webp",
+        "full": "assets/work-folders/portrait/full-08.jpg",
+        "source": "微信图片_2026-05-15_103616_530.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/portrait/item-09.webp",
+        "large": "assets/work-folders/portrait/large-09.webp",
+        "full": "assets/work-folders/portrait/full-09.jpg",
+        "source": "微信图片_2026-05-15_103619_298.jpg"
+      }
+    ],
+    "sources": [
+      "微信图片_2026-05-15_103541_891.jpg",
+      "微信图片_2026-05-15_103600_610.jpg",
+      "微信图片_2026-05-15_103603_458.jpg",
+      "微信图片_2026-05-15_103606_201.jpg",
+      "微信图片_2026-05-15_103608_682.jpg",
+      "微信图片_2026-05-15_103611_436.jpg",
+      "微信图片_2026-05-15_103613_947.jpg",
+      "微信图片_2026-05-15_103616_530.jpg",
+      "微信图片_2026-05-15_103619_298.jpg"
+    ]
+  },
+  {
+    "slug": "carpet",
+    "folder": "地毯",
+    "kicker": "04 / CARPET",
+    "title": "地毯",
+    "desc": "按原始文件夹归类的作品子集",
+    "count": 14,
+    "cover": "assets/work-folders/carpet/cover.webp",
+    "thumbs": [
+      "assets/work-folders/carpet/thumb-1.webp",
+      "assets/work-folders/carpet/thumb-2.webp",
+      "assets/work-folders/carpet/thumb-3.webp"
+    ],
+    "items": [
+      {
+        "thumb": "assets/work-folders/carpet/item-01.webp",
+        "large": "assets/work-folders/carpet/large-01.webp",
+        "full": "assets/work-folders/carpet/full-01.jpg",
+        "source": "DSCF4164.JPG"
+      },
+      {
+        "thumb": "assets/work-folders/carpet/item-02.webp",
+        "large": "assets/work-folders/carpet/large-02.webp",
+        "full": "assets/work-folders/carpet/full-02.jpg",
+        "source": "摊牌04841.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/carpet/item-03.webp",
+        "large": "assets/work-folders/carpet/large-03.webp",
+        "full": "assets/work-folders/carpet/full-03.jpg",
+        "source": "摊牌05251.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/carpet/item-04.webp",
+        "large": "assets/work-folders/carpet/large-04.webp",
+        "full": "assets/work-folders/carpet/full-04.jpg",
+        "source": "摊牌06951.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/carpet/item-05.webp",
+        "large": "assets/work-folders/carpet/large-05.webp",
+        "full": "assets/work-folders/carpet/full-05.jpg",
+        "source": "摊牌07051.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/carpet/item-06.webp",
+        "large": "assets/work-folders/carpet/large-06.webp",
+        "full": "assets/work-folders/carpet/full-06.jpg",
+        "source": "摊牌08041.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/carpet/item-07.webp",
+        "large": "assets/work-folders/carpet/large-07.webp",
+        "full": "assets/work-folders/carpet/full-07.jpg",
+        "source": "摊牌09141.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/carpet/item-08.webp",
+        "large": "assets/work-folders/carpet/large-08.webp",
+        "full": "assets/work-folders/carpet/full-08.jpg",
+        "source": "摊牌09231.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/carpet/item-09.webp",
+        "large": "assets/work-folders/carpet/large-09.webp",
+        "full": "assets/work-folders/carpet/full-09.jpg",
+        "source": "摊牌09521.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/carpet/item-10.webp",
+        "large": "assets/work-folders/carpet/large-10.webp",
+        "full": "assets/work-folders/carpet/full-10.jpg",
+        "source": "摊牌21721.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/carpet/item-11.webp",
+        "large": "assets/work-folders/carpet/large-11.webp",
+        "full": "assets/work-folders/carpet/full-11.jpg",
+        "source": "摊牌21751.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/carpet/item-12.webp",
+        "large": "assets/work-folders/carpet/large-12.webp",
+        "full": "assets/work-folders/carpet/full-12.jpg",
+        "source": "白屋0172 11.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/carpet/item-13.webp",
+        "large": "assets/work-folders/carpet/large-13.webp",
+        "full": "assets/work-folders/carpet/full-13.jpg",
+        "source": "白屋0173 11.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/carpet/item-14.webp",
+        "large": "assets/work-folders/carpet/large-14.webp",
+        "full": "assets/work-folders/carpet/full-14.jpg",
+        "source": "白屋00551.jpg"
+      }
+    ],
+    "sources": [
+      "DSCF4164.JPG",
+      "摊牌04841.jpg",
+      "摊牌05251.jpg",
+      "摊牌06951.jpg",
+      "摊牌07051.jpg",
+      "摊牌08041.jpg",
+      "摊牌09141.jpg",
+      "摊牌09231.jpg",
+      "摊牌09521.jpg",
+      "摊牌21721.jpg",
+      "摊牌21751.jpg",
+      "白屋0172 11.jpg",
+      "白屋0173 11.jpg",
+      "白屋00551.jpg"
+    ]
+  },
+  {
+    "slug": "hat",
+    "folder": "帽子",
+    "kicker": "05 / HAT",
+    "title": "帽子",
+    "desc": "按原始文件夹归类的作品子集",
+    "count": 15,
+    "cover": "assets/work-folders/hat/cover.webp",
+    "thumbs": [
+      "assets/work-folders/hat/thumb-1.webp",
+      "assets/work-folders/hat/thumb-2.webp",
+      "assets/work-folders/hat/thumb-3.webp"
+    ],
+    "items": [
+      {
+        "thumb": "assets/work-folders/hat/item-01.webp",
+        "large": "assets/work-folders/hat/large-01.webp",
+        "full": "assets/work-folders/hat/full-01.jpg",
+        "source": "12554e39c95578671aa36341d915813e.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/hat/item-02.webp",
+        "large": "assets/work-folders/hat/large-02.webp",
+        "full": "assets/work-folders/hat/full-02.png",
+        "source": "ComfyUI_00132_.png"
+      },
+      {
+        "thumb": "assets/work-folders/hat/item-03.webp",
+        "large": "assets/work-folders/hat/large-03.webp",
+        "full": "assets/work-folders/hat/full-03.png",
+        "source": "ComfyUI_00133_.png"
+      },
+      {
+        "thumb": "assets/work-folders/hat/item-04.webp",
+        "large": "assets/work-folders/hat/large-04.webp",
+        "full": "assets/work-folders/hat/full-04.png",
+        "source": "ComfyUI_00134_.png"
+      },
+      {
+        "thumb": "assets/work-folders/hat/item-05.webp",
+        "large": "assets/work-folders/hat/large-05.webp",
+        "full": "assets/work-folders/hat/full-05.png",
+        "source": "ComfyUI_00135_.png"
+      },
+      {
+        "thumb": "assets/work-folders/hat/item-06.webp",
+        "large": "assets/work-folders/hat/large-06.webp",
+        "full": "assets/work-folders/hat/full-06.png",
+        "source": "ComfyUI_00136_.png"
+      },
+      {
+        "thumb": "assets/work-folders/hat/item-07.webp",
+        "large": "assets/work-folders/hat/large-07.webp",
+        "full": "assets/work-folders/hat/full-07.png",
+        "source": "ComfyUI_00137_.png"
+      },
+      {
+        "thumb": "assets/work-folders/hat/item-08.webp",
+        "large": "assets/work-folders/hat/large-08.webp",
+        "full": "assets/work-folders/hat/full-08.png",
+        "source": "ComfyUI_00138_.png"
+      },
+      {
+        "thumb": "assets/work-folders/hat/item-09.webp",
+        "large": "assets/work-folders/hat/large-09.webp",
+        "full": "assets/work-folders/hat/full-09.png",
+        "source": "ComfyUI_00139_.png"
+      },
+      {
+        "thumb": "assets/work-folders/hat/item-10.webp",
+        "large": "assets/work-folders/hat/large-10.webp",
+        "full": "assets/work-folders/hat/full-10.png",
+        "source": "微信图片_20260525115755_18_1479.png"
+      },
+      {
+        "thumb": "assets/work-folders/hat/item-11.webp",
+        "large": "assets/work-folders/hat/large-11.webp",
+        "full": "assets/work-folders/hat/full-11.jpg",
+        "source": "微信图片_20260525141531_32_1479.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/hat/item-12.webp",
+        "large": "assets/work-folders/hat/large-12.webp",
+        "full": "assets/work-folders/hat/full-12.jpg",
+        "source": "微信图片_20260525141549_35_1479.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/hat/item-13.webp",
+        "large": "assets/work-folders/hat/large-13.webp",
+        "full": "assets/work-folders/hat/full-13.png",
+        "source": "微信图片_20260525144537_55_1479.png"
+      },
+      {
+        "thumb": "assets/work-folders/hat/item-14.webp",
+        "large": "assets/work-folders/hat/large-14.webp",
+        "full": "assets/work-folders/hat/full-14.jpg",
+        "source": "微信图片_20260526113612_496_111.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/hat/item-15.webp",
+        "large": "assets/work-folders/hat/large-15.webp",
+        "full": "assets/work-folders/hat/full-15.png",
+        "source": "微信图片_20260526161430_501_111.png"
+      }
+    ],
+    "sources": [
+      "12554e39c95578671aa36341d915813e.jpg",
+      "ComfyUI_00132_.png",
+      "ComfyUI_00133_.png",
+      "ComfyUI_00134_.png",
+      "ComfyUI_00135_.png",
+      "ComfyUI_00136_.png",
+      "ComfyUI_00137_.png",
+      "ComfyUI_00138_.png",
+      "ComfyUI_00139_.png",
+      "微信图片_20260525115755_18_1479.png",
+      "微信图片_20260525141531_32_1479.jpg",
+      "微信图片_20260525141549_35_1479.jpg",
+      "微信图片_20260525144537_55_1479.png",
+      "微信图片_20260526113612_496_111.jpg",
+      "微信图片_20260526161430_501_111.png"
+    ]
+  },
+  {
+    "slug": "outdoor-composite",
+    "folder": "户外合成",
+    "kicker": "06 / OUTDOOR",
+    "title": "户外合成",
+    "desc": "按原始文件夹归类的作品子集",
+    "count": 17,
+    "cover": "assets/work-folders/outdoor-composite/cover.webp",
+    "thumbs": [
+      "assets/work-folders/outdoor-composite/thumb-1.webp",
+      "assets/work-folders/outdoor-composite/thumb-2.webp",
+      "assets/work-folders/outdoor-composite/thumb-3.webp"
+    ],
+    "items": [
+      {
+        "thumb": "assets/work-folders/outdoor-composite/item-01.webp",
+        "large": "assets/work-folders/outdoor-composite/large-01.webp",
+        "full": "assets/work-folders/outdoor-composite/full-01.png",
+        "source": "ComfyUI_00148_.png"
+      },
+      {
+        "thumb": "assets/work-folders/outdoor-composite/item-02.webp",
+        "large": "assets/work-folders/outdoor-composite/large-02.webp",
+        "full": "assets/work-folders/outdoor-composite/full-02.png",
+        "source": "ComfyUI_00149_.png"
+      },
+      {
+        "thumb": "assets/work-folders/outdoor-composite/item-03.webp",
+        "large": "assets/work-folders/outdoor-composite/large-03.webp",
+        "full": "assets/work-folders/outdoor-composite/full-03.png",
+        "source": "ComfyUI_00150_.png"
+      },
+      {
+        "thumb": "assets/work-folders/outdoor-composite/item-04.webp",
+        "large": "assets/work-folders/outdoor-composite/large-04.webp",
+        "full": "assets/work-folders/outdoor-composite/full-04.png",
+        "source": "ComfyUI_00151_.png"
+      },
+      {
+        "thumb": "assets/work-folders/outdoor-composite/item-05.webp",
+        "large": "assets/work-folders/outdoor-composite/large-05.webp",
+        "full": "assets/work-folders/outdoor-composite/full-05.png",
+        "source": "ComfyUI_00152_.png"
+      },
+      {
+        "thumb": "assets/work-folders/outdoor-composite/item-06.webp",
+        "large": "assets/work-folders/outdoor-composite/large-06.webp",
+        "full": "assets/work-folders/outdoor-composite/full-06.png",
+        "source": "ComfyUI_00153_.png"
+      },
+      {
+        "thumb": "assets/work-folders/outdoor-composite/item-07.webp",
+        "large": "assets/work-folders/outdoor-composite/large-07.webp",
+        "full": "assets/work-folders/outdoor-composite/full-07.png",
+        "source": "ComfyUI_00154_.png"
+      },
+      {
+        "thumb": "assets/work-folders/outdoor-composite/item-08.webp",
+        "large": "assets/work-folders/outdoor-composite/large-08.webp",
+        "full": "assets/work-folders/outdoor-composite/full-08.png",
+        "source": "ComfyUI_00155_.png"
+      },
+      {
+        "thumb": "assets/work-folders/outdoor-composite/item-09.webp",
+        "large": "assets/work-folders/outdoor-composite/large-09.webp",
+        "full": "assets/work-folders/outdoor-composite/full-09.png",
+        "source": "ComfyUI_00156_.png"
+      },
+      {
+        "thumb": "assets/work-folders/outdoor-composite/item-10.webp",
+        "large": "assets/work-folders/outdoor-composite/large-10.webp",
+        "full": "assets/work-folders/outdoor-composite/full-10.png",
+        "source": "ComfyUI_00157_.png"
+      },
+      {
+        "thumb": "assets/work-folders/outdoor-composite/item-11.webp",
+        "large": "assets/work-folders/outdoor-composite/large-11.webp",
+        "full": "assets/work-folders/outdoor-composite/full-11.png",
+        "source": "ComfyUI_00158_.png"
+      },
+      {
+        "thumb": "assets/work-folders/outdoor-composite/item-12.webp",
+        "large": "assets/work-folders/outdoor-composite/large-12.webp",
+        "full": "assets/work-folders/outdoor-composite/full-12.png",
+        "source": "ComfyUI_00159_.png"
+      },
+      {
+        "thumb": "assets/work-folders/outdoor-composite/item-13.webp",
+        "large": "assets/work-folders/outdoor-composite/large-13.webp",
+        "full": "assets/work-folders/outdoor-composite/full-13.png",
+        "source": "ComfyUI_00160_.png"
+      },
+      {
+        "thumb": "assets/work-folders/outdoor-composite/item-14.webp",
+        "large": "assets/work-folders/outdoor-composite/large-14.webp",
+        "full": "assets/work-folders/outdoor-composite/full-14.png",
+        "source": "ComfyUI_00161_.png"
+      },
+      {
+        "thumb": "assets/work-folders/outdoor-composite/item-15.webp",
+        "large": "assets/work-folders/outdoor-composite/large-15.webp",
+        "full": "assets/work-folders/outdoor-composite/full-15.png",
+        "source": "ComfyUI_00162_.png"
+      },
+      {
+        "thumb": "assets/work-folders/outdoor-composite/item-16.webp",
+        "large": "assets/work-folders/outdoor-composite/large-16.webp",
+        "full": "assets/work-folders/outdoor-composite/full-16.png",
+        "source": "ComfyUI_00163_.png"
+      },
+      {
+        "thumb": "assets/work-folders/outdoor-composite/item-17.webp",
+        "large": "assets/work-folders/outdoor-composite/large-17.webp",
+        "full": "assets/work-folders/outdoor-composite/full-17.png",
+        "source": "ComfyUI_00164_.png"
+      }
+    ],
+    "sources": [
+      "ComfyUI_00148_.png",
+      "ComfyUI_00149_.png",
+      "ComfyUI_00150_.png",
+      "ComfyUI_00151_.png",
+      "ComfyUI_00152_.png",
+      "ComfyUI_00153_.png",
+      "ComfyUI_00154_.png",
+      "ComfyUI_00155_.png",
+      "ComfyUI_00156_.png",
+      "ComfyUI_00157_.png",
+      "ComfyUI_00158_.png",
+      "ComfyUI_00159_.png",
+      "ComfyUI_00160_.png",
+      "ComfyUI_00161_.png",
+      "ComfyUI_00162_.png",
+      "ComfyUI_00163_.png",
+      "ComfyUI_00164_.png"
+    ]
+  },
+  {
+    "slug": "youmujie",
+    "folder": "游牧结",
+    "kicker": "07 / YOUMUJIE",
+    "title": "游牧结",
+    "desc": "按原始文件夹归类的作品子集",
+    "count": 13,
+    "cover": "assets/work-folders/youmujie/cover.webp",
+    "thumbs": [
+      "assets/work-folders/youmujie/thumb-1.webp",
+      "assets/work-folders/youmujie/thumb-2.webp",
+      "assets/work-folders/youmujie/thumb-3.webp"
+    ],
+    "items": [
+      {
+        "thumb": "assets/work-folders/youmujie/item-01.webp",
+        "large": "assets/work-folders/youmujie/large-01.webp",
+        "full": "assets/work-folders/youmujie/full-01.jpg",
+        "source": "1111.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/youmujie/item-02.webp",
+        "large": "assets/work-folders/youmujie/large-02.webp",
+        "full": "assets/work-folders/youmujie/full-02.jpg",
+        "source": "微信图片_2026-05-15_103120_394.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/youmujie/item-03.webp",
+        "large": "assets/work-folders/youmujie/large-03.webp",
+        "full": "assets/work-folders/youmujie/full-03.jpg",
+        "source": "微信图片_2026-05-15_103139_323.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/youmujie/item-04.webp",
+        "large": "assets/work-folders/youmujie/large-04.webp",
+        "full": "assets/work-folders/youmujie/full-04.jpg",
+        "source": "微信图片_2026-05-15_103142_660.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/youmujie/item-05.webp",
+        "large": "assets/work-folders/youmujie/large-05.webp",
+        "full": "assets/work-folders/youmujie/full-05.jpg",
+        "source": "微信图片_2026-05-15_103145_843.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/youmujie/item-06.webp",
+        "large": "assets/work-folders/youmujie/large-06.webp",
+        "full": "assets/work-folders/youmujie/full-06.jpg",
+        "source": "微信图片_2026-05-15_103148_794.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/youmujie/item-07.webp",
+        "large": "assets/work-folders/youmujie/large-07.webp",
+        "full": "assets/work-folders/youmujie/full-07.jpg",
+        "source": "微信图片_2026-05-15_103152_283.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/youmujie/item-08.webp",
+        "large": "assets/work-folders/youmujie/large-08.webp",
+        "full": "assets/work-folders/youmujie/full-08.jpg",
+        "source": "微信图片_2026-05-15_103155_299.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/youmujie/item-09.webp",
+        "large": "assets/work-folders/youmujie/large-09.webp",
+        "full": "assets/work-folders/youmujie/full-09.jpg",
+        "source": "微信图片_2026-05-15_103158_467.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/youmujie/item-10.webp",
+        "large": "assets/work-folders/youmujie/large-10.webp",
+        "full": "assets/work-folders/youmujie/full-10.jpg",
+        "source": "微信图片_2026-05-15_103201_290.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/youmujie/item-11.webp",
+        "large": "assets/work-folders/youmujie/large-11.webp",
+        "full": "assets/work-folders/youmujie/full-11.jpg",
+        "source": "微信图片_20260515104817_459_111.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/youmujie/item-12.webp",
+        "large": "assets/work-folders/youmujie/large-12.webp",
+        "full": "assets/work-folders/youmujie/full-12.jpg",
+        "source": "微信图片_20260515104821_460_111.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/youmujie/item-13.webp",
+        "large": "assets/work-folders/youmujie/large-13.webp",
+        "full": "assets/work-folders/youmujie/full-13.jpg",
+        "source": "微信图片_20260515104832_461_111.jpg"
+      }
+    ],
+    "sources": [
+      "1111.jpg",
+      "微信图片_2026-05-15_103120_394.jpg",
+      "微信图片_2026-05-15_103139_323.jpg",
+      "微信图片_2026-05-15_103142_660.jpg",
+      "微信图片_2026-05-15_103145_843.jpg",
+      "微信图片_2026-05-15_103148_794.jpg",
+      "微信图片_2026-05-15_103152_283.jpg",
+      "微信图片_2026-05-15_103155_299.jpg",
+      "微信图片_2026-05-15_103158_467.jpg",
+      "微信图片_2026-05-15_103201_290.jpg",
+      "微信图片_20260515104817_459_111.jpg",
+      "微信图片_20260515104821_460_111.jpg",
+      "微信图片_20260515104832_461_111.jpg"
+    ]
+  },
+  {
+    "slug": "curtain",
+    "folder": "窗帘",
+    "kicker": "08 / CURTAIN",
+    "title": "窗帘",
+    "desc": "按原始文件夹归类的作品子集",
+    "count": 10,
+    "cover": "assets/work-folders/curtain/cover.webp",
+    "thumbs": [
+      "assets/work-folders/curtain/thumb-1.webp",
+      "assets/work-folders/curtain/thumb-2.webp",
+      "assets/work-folders/curtain/thumb-3.webp"
+    ],
+    "items": [
+      {
+        "thumb": "assets/work-folders/curtain/item-01.webp",
+        "large": "assets/work-folders/curtain/large-01.webp",
+        "full": "assets/work-folders/curtain/full-01.jpg",
+        "source": "2024.1.11金蝉布艺0992 拷贝.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/curtain/item-02.webp",
+        "large": "assets/work-folders/curtain/large-02.webp",
+        "full": "assets/work-folders/curtain/full-02.jpg",
+        "source": "2024.1.11金蝉布艺1209 拷贝.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/curtain/item-03.webp",
+        "large": "assets/work-folders/curtain/large-03.webp",
+        "full": "assets/work-folders/curtain/full-03.jpg",
+        "source": "2024.1.11金蝉布艺1251 拷贝.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/curtain/item-04.webp",
+        "large": "assets/work-folders/curtain/large-04.webp",
+        "full": "assets/work-folders/curtain/full-04.jpg",
+        "source": "2024.1.11金蝉布艺1304 拷贝.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/curtain/item-05.webp",
+        "large": "assets/work-folders/curtain/large-05.webp",
+        "full": "assets/work-folders/curtain/full-05.jpg",
+        "source": "2024.1.11金蝉布艺1573 拷贝.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/curtain/item-06.webp",
+        "large": "assets/work-folders/curtain/large-06.webp",
+        "full": "assets/work-folders/curtain/full-06.jpg",
+        "source": "2024.1.11金蝉布艺1618 拷贝.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/curtain/item-07.webp",
+        "large": "assets/work-folders/curtain/large-07.webp",
+        "full": "assets/work-folders/curtain/full-07.jpg",
+        "source": "2024.1.11金蝉布艺1624 拷贝.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/curtain/item-08.webp",
+        "large": "assets/work-folders/curtain/large-08.webp",
+        "full": "assets/work-folders/curtain/full-08.jpg",
+        "source": "2024.1.11金蝉布艺1696 拷贝.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/curtain/item-09.webp",
+        "large": "assets/work-folders/curtain/large-09.webp",
+        "full": "assets/work-folders/curtain/full-09.jpg",
+        "source": "2024.1.11金蝉布艺1753 拷贝.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/curtain/item-10.webp",
+        "large": "assets/work-folders/curtain/large-10.webp",
+        "full": "assets/work-folders/curtain/full-10.jpg",
+        "source": "2024.1.11金蝉布艺1819 拷贝.jpg"
+      }
+    ],
+    "sources": [
+      "2024.1.11金蝉布艺0992 拷贝.jpg",
+      "2024.1.11金蝉布艺1209 拷贝.jpg",
+      "2024.1.11金蝉布艺1251 拷贝.jpg",
+      "2024.1.11金蝉布艺1304 拷贝.jpg",
+      "2024.1.11金蝉布艺1573 拷贝.jpg",
+      "2024.1.11金蝉布艺1618 拷贝.jpg",
+      "2024.1.11金蝉布艺1624 拷贝.jpg",
+      "2024.1.11金蝉布艺1696 拷贝.jpg",
+      "2024.1.11金蝉布艺1753 拷贝.jpg",
+      "2024.1.11金蝉布艺1819 拷贝.jpg"
+    ]
+  },
+  {
+    "slug": "qingfeng-curtain",
+    "folder": "金蝉清风窗帘",
+    "kicker": "09 / QINGFENG",
+    "title": "金蝉清风窗帘",
+    "desc": "按原始文件夹归类的作品子集",
+    "count": 23,
+    "cover": "assets/work-folders/qingfeng-curtain/cover.webp",
+    "thumbs": [
+      "assets/work-folders/qingfeng-curtain/thumb-1.webp",
+      "assets/work-folders/qingfeng-curtain/thumb-2.webp",
+      "assets/work-folders/qingfeng-curtain/thumb-3.webp"
+    ],
+    "items": [
+      {
+        "thumb": "assets/work-folders/qingfeng-curtain/item-01.webp",
+        "large": "assets/work-folders/qingfeng-curtain/large-01.webp",
+        "full": "assets/work-folders/qingfeng-curtain/full-01.jpg",
+        "source": "未命名会话0062.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/qingfeng-curtain/item-02.webp",
+        "large": "assets/work-folders/qingfeng-curtain/large-02.webp",
+        "full": "assets/work-folders/qingfeng-curtain/full-02.jpg",
+        "source": "未命名会话0104.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/qingfeng-curtain/item-03.webp",
+        "large": "assets/work-folders/qingfeng-curtain/large-03.webp",
+        "full": "assets/work-folders/qingfeng-curtain/full-03.jpg",
+        "source": "未命名会话0111.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/qingfeng-curtain/item-04.webp",
+        "large": "assets/work-folders/qingfeng-curtain/large-04.webp",
+        "full": "assets/work-folders/qingfeng-curtain/full-04.jpg",
+        "source": "未命名会话0117.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/qingfeng-curtain/item-05.webp",
+        "large": "assets/work-folders/qingfeng-curtain/large-05.webp",
+        "full": "assets/work-folders/qingfeng-curtain/full-05.jpg",
+        "source": "未命名会话0119.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/qingfeng-curtain/item-06.webp",
+        "large": "assets/work-folders/qingfeng-curtain/large-06.webp",
+        "full": "assets/work-folders/qingfeng-curtain/full-06.jpg",
+        "source": "未命名会话0121.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/qingfeng-curtain/item-07.webp",
+        "large": "assets/work-folders/qingfeng-curtain/large-07.webp",
+        "full": "assets/work-folders/qingfeng-curtain/full-07.jpg",
+        "source": "未命名会话0139.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/qingfeng-curtain/item-08.webp",
+        "large": "assets/work-folders/qingfeng-curtain/large-08.webp",
+        "full": "assets/work-folders/qingfeng-curtain/full-08.jpg",
+        "source": "未命名会话0172.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/qingfeng-curtain/item-09.webp",
+        "large": "assets/work-folders/qingfeng-curtain/large-09.webp",
+        "full": "assets/work-folders/qingfeng-curtain/full-09.jpg",
+        "source": "未命名会话0178.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/qingfeng-curtain/item-10.webp",
+        "large": "assets/work-folders/qingfeng-curtain/large-10.webp",
+        "full": "assets/work-folders/qingfeng-curtain/full-10.jpg",
+        "source": "未命名会话0184.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/qingfeng-curtain/item-11.webp",
+        "large": "assets/work-folders/qingfeng-curtain/large-11.webp",
+        "full": "assets/work-folders/qingfeng-curtain/full-11.jpg",
+        "source": "未命名会话0192.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/qingfeng-curtain/item-12.webp",
+        "large": "assets/work-folders/qingfeng-curtain/large-12.webp",
+        "full": "assets/work-folders/qingfeng-curtain/full-12.jpg",
+        "source": "未命名会话0200.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/qingfeng-curtain/item-13.webp",
+        "large": "assets/work-folders/qingfeng-curtain/large-13.webp",
+        "full": "assets/work-folders/qingfeng-curtain/full-13.jpg",
+        "source": "未命名会话0208.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/qingfeng-curtain/item-14.webp",
+        "large": "assets/work-folders/qingfeng-curtain/large-14.webp",
+        "full": "assets/work-folders/qingfeng-curtain/full-14.jpg",
+        "source": "未命名会话0212.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/qingfeng-curtain/item-15.webp",
+        "large": "assets/work-folders/qingfeng-curtain/large-15.webp",
+        "full": "assets/work-folders/qingfeng-curtain/full-15.jpg",
+        "source": "未命名会话0243 1.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/qingfeng-curtain/item-16.webp",
+        "large": "assets/work-folders/qingfeng-curtain/large-16.webp",
+        "full": "assets/work-folders/qingfeng-curtain/full-16.jpg",
+        "source": "未命名会话0243.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/qingfeng-curtain/item-17.webp",
+        "large": "assets/work-folders/qingfeng-curtain/large-17.webp",
+        "full": "assets/work-folders/qingfeng-curtain/full-17.jpg",
+        "source": "未命名会话0244.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/qingfeng-curtain/item-18.webp",
+        "large": "assets/work-folders/qingfeng-curtain/large-18.webp",
+        "full": "assets/work-folders/qingfeng-curtain/full-18.jpg",
+        "source": "未命名会话0252.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/qingfeng-curtain/item-19.webp",
+        "large": "assets/work-folders/qingfeng-curtain/large-19.webp",
+        "full": "assets/work-folders/qingfeng-curtain/full-19.jpg",
+        "source": "未命名会话0253.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/qingfeng-curtain/item-20.webp",
+        "large": "assets/work-folders/qingfeng-curtain/large-20.webp",
+        "full": "assets/work-folders/qingfeng-curtain/full-20.jpg",
+        "source": "未命名会话0257.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/qingfeng-curtain/item-21.webp",
+        "large": "assets/work-folders/qingfeng-curtain/large-21.webp",
+        "full": "assets/work-folders/qingfeng-curtain/full-21.jpg",
+        "source": "未命名会话0261.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/qingfeng-curtain/item-22.webp",
+        "large": "assets/work-folders/qingfeng-curtain/large-22.webp",
+        "full": "assets/work-folders/qingfeng-curtain/full-22.jpg",
+        "source": "未命名会话0275.jpg"
+      },
+      {
+        "thumb": "assets/work-folders/qingfeng-curtain/item-23.webp",
+        "large": "assets/work-folders/qingfeng-curtain/large-23.webp",
+        "full": "assets/work-folders/qingfeng-curtain/full-23.jpg",
+        "source": "未命名会话0281.jpg"
+      }
+    ],
+    "sources": [
+      "未命名会话0062.jpg",
+      "未命名会话0104.jpg",
+      "未命名会话0111.jpg",
+      "未命名会话0117.jpg",
+      "未命名会话0119.jpg",
+      "未命名会话0121.jpg",
+      "未命名会话0139.jpg",
+      "未命名会话0172.jpg",
+      "未命名会话0178.jpg",
+      "未命名会话0184.jpg",
+      "未命名会话0192.jpg",
+      "未命名会话0200.jpg",
+      "未命名会话0208.jpg",
+      "未命名会话0212.jpg",
+      "未命名会话0243 1.jpg",
+      "未命名会话0243.jpg",
+      "未命名会话0244.jpg",
+      "未命名会话0252.jpg",
+      "未命名会话0253.jpg",
+      "未命名会话0257.jpg",
+      "未命名会话0261.jpg",
+      "未命名会话0275.jpg",
+      "未命名会话0281.jpg"
+    ]
+  }
+]
