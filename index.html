@@ -6007,7 +6007,11 @@
           button.setAttribute('aria-current', index === activePhoto ? 'true' : 'false');
         });
         if (pageVisible) {
-          thumbButtons[activePhoto]?.scrollIntoView({behavior:reduceMotion ? 'auto' : 'smooth',block:'nearest',inline:'center'});
+          const activeThumb = thumbButtons[activePhoto];
+          if (activeThumb && thumbs) {
+            const targetLeft = activeThumb.offsetLeft - (thumbs.clientWidth - activeThumb.offsetWidth) / 2;
+            thumbs.scrollTo({left:Math.max(0,targetLeft),behavior:reduceMotion ? 'auto' : 'smooth'});
+          }
         }
       }
 
