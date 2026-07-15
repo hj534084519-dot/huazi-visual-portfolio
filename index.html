@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>华子｜视觉主管作品集</title>
+  <title>华子｜全案摄影师作品集</title>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Bruno+Ace&family=Exo+2:wght@400;500;600;700;800;900&family=Marcellus&family=Marcellus+SC&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
     @import url('https://fonts.cdnfonts.com/css/hfpoet');
@@ -288,8 +288,8 @@
       box-shadow:0 18px 45px rgba(0,0,0,.16);
     }
     .body-copy{
-      color:rgba(0,0,0,.76);
-      text-shadow:0 1px 12px rgba(255,255,255,.78);
+      color:rgba(255,255,255,.94);
+      text-shadow:0 2px 14px rgba(0,0,0,.78),0 0 2px rgba(0,0,0,.9);
     }
 
     /* ================= PAGE 2 / PARTICLE HOURGLASS ================= */
@@ -3679,6 +3679,377 @@
       .case-plan-card,.case-result-image,.case-tab,.case-thumb,.case-pdf-dialog{transition:none!important}
     }
 
+    /* PAGE 4 / SINGLE-STAGE PLAN-TO-RESULT MORPH */
+    .case-morph-layout{
+      min-height:0;
+      display:grid;
+      grid-template-rows:auto minmax(300px,1fr) auto auto;
+      gap:clamp(10px,1.25vh,16px);
+      position:relative;
+    }
+    .case-morph-head{
+      display:flex;
+      align-items:flex-end;
+      justify-content:space-between;
+      gap:24px;
+      padding:0 2px;
+    }
+    .case-morph-head h3{
+      margin-top:5px;
+      color:#eef1e9;
+      font-family:'Marcellus','Noto Serif SC',serif;
+      font-weight:400;
+      font-size:clamp(1.02rem,1.45vw,1.4rem);
+      letter-spacing:.08em;
+    }
+    .case-morph-stage{
+      --case-morph:0;
+      --case-morph-pct:0%;
+      --case-morph-clip:100%;
+      position:relative;
+      min-width:0;
+      min-height:300px;
+      overflow:hidden;
+      isolation:isolate;
+      border:0;
+      border-radius:clamp(20px,2vw,32px);
+      background:
+        radial-gradient(circle at 20% 18%,rgba(113,142,105,.17),transparent 34%),
+        linear-gradient(140deg,rgba(14,18,18,.72),rgba(8,7,17,.58));
+      box-shadow:0 28px 90px rgba(0,0,0,.24),inset 0 1px 0 rgba(255,255,255,.09);
+      cursor:ew-resize;
+      touch-action:pan-y;
+      user-select:none;
+      -webkit-user-select:none;
+    }
+    .case-morph-stage::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      z-index:9;
+      pointer-events:none;
+      border-radius:inherit;
+      background:
+        linear-gradient(90deg,rgba(2,4,6,.34),transparent 16%,transparent 84%,rgba(2,4,6,.35)),
+        linear-gradient(180deg,rgba(3,5,7,.26),transparent 24%,transparent 72%,rgba(3,5,7,.5));
+    }
+    .case-morph-stage::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      z-index:10;
+      pointer-events:none;
+      border-radius:inherit;
+      box-shadow:inset 0 0 0 1px rgba(224,235,217,.1),inset 0 0 70px rgba(0,0,0,.14);
+    }
+    .case-morph-stage.is-dragging{cursor:grabbing}
+    .case-morph-stage .case-morph-plan{
+      position:absolute;
+      inset:0;
+      z-index:1;
+      min-height:0;
+      border-radius:0;
+      overflow:hidden;
+      background:linear-gradient(145deg,#e8e8e0,#c9d0c4);
+      perspective:none;
+      opacity:1;
+      transform:scale(1.01);
+      transform-origin:center;
+      transition:opacity .12s linear,transform .12s linear;
+    }
+    .case-morph-stage .case-plan-card,
+    .case-morph-stage .case-plan-card.is-active{
+      display:block;
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      margin:0;
+      overflow:hidden;
+      border-radius:0;
+      opacity:0;
+      z-index:1;
+      pointer-events:none;
+      transform:none;
+      filter:none;
+      background:#ecece6;
+      box-shadow:none;
+      transition:opacity .5s ease;
+    }
+    .case-morph-stage .case-plan-card.is-active{
+      opacity:1;
+      z-index:2;
+    }
+    .case-morph-stage .case-plan-card.is-supporting{
+      display:block;
+      inset:7% 5% auto auto;
+      width:26%;
+      height:40%;
+      opacity:.94;
+      z-index:4;
+      transform:none;
+      filter:none;
+      border-radius:14px;
+      box-shadow:0 18px 48px rgba(4,8,7,.38),0 0 0 1px rgba(255,255,255,.52);
+      transition:opacity .5s ease;
+    }
+    .case-morph-stage .case-plan-card.is-secondary{
+      display:none;
+      opacity:0;
+    }
+    .case-morph-stage .case-plan-card img{
+      width:100%;
+      height:100%;
+      display:block;
+      object-fit:contain;
+      background:#ecece6;
+      filter:none;
+    }
+    .case-morph-stage .case-plan-card figcaption{
+      left:14px;
+      bottom:12px;
+      z-index:2;
+    }
+    .case-morph-result{
+      position:absolute;
+      inset:0;
+      z-index:3;
+      margin:0;
+      overflow:hidden;
+      clip-path:inset(0 var(--case-morph-clip) 0 0);
+      -webkit-clip-path:inset(0 var(--case-morph-clip) 0 0);
+      background:#080b0c;
+      will-change:clip-path;
+    }
+    .case-result-backdrop{
+      position:absolute;
+      inset:-7%;
+      background-position:center;
+      background-size:cover;
+      filter:blur(25px) brightness(.48) saturate(.9);
+      transform:scale(1.08);
+      opacity:.78;
+    }
+    .case-morph-stage .case-result-image{
+      position:relative;
+      z-index:1;
+      width:100%;
+      height:100%;
+      display:block;
+      object-fit:contain;
+      object-position:center;
+      cursor:zoom-in;
+      filter:none!important;
+      opacity:1;
+      transform:none;
+      transition:opacity .24s ease;
+    }
+    .case-morph-stage .case-result-image.is-switching{opacity:.12}
+    .case-morph-edge{
+      position:absolute;
+      top:0;
+      bottom:0;
+      left:var(--case-morph-pct);
+      z-index:8;
+      width:1px;
+      pointer-events:none;
+      transform:translateX(-1px);
+      opacity:var(--case-edge-opacity,0);
+      background:rgba(225,239,218,.9);
+      box-shadow:0 0 12px rgba(212,235,204,.9),0 0 38px rgba(139,181,126,.8);
+    }
+    .case-morph-edge span{
+      position:absolute;
+      left:50%;
+      top:50%;
+      width:34px;
+      height:64px;
+      border-radius:999px;
+      transform:translate(-50%,-50%);
+      background:rgba(16,24,20,.5);
+      box-shadow:inset 0 0 0 1px rgba(237,246,231,.72),0 10px 26px rgba(0,0,0,.3);
+      backdrop-filter:blur(8px);
+      -webkit-backdrop-filter:blur(8px);
+    }
+    .case-morph-edge span::before,.case-morph-edge span::after{
+      content:"";
+      position:absolute;
+      top:50%;
+      width:5px;
+      height:5px;
+      border-top:1px solid rgba(255,255,255,.8);
+      border-left:1px solid rgba(255,255,255,.8);
+    }
+    .case-morph-edge span::before{left:8px;transform:translateY(-50%) rotate(-45deg)}
+    .case-morph-edge span::after{right:8px;transform:translateY(-50%) rotate(135deg)}
+    .case-morph-label{
+      position:absolute;
+      top:clamp(14px,2vw,25px);
+      z-index:11;
+      display:flex;
+      align-items:center;
+      gap:8px;
+      padding:8px 12px;
+      border-radius:999px;
+      color:rgba(242,246,238,.86);
+      background:rgba(5,8,9,.43);
+      backdrop-filter:blur(12px);
+      -webkit-backdrop-filter:blur(12px);
+      font:500 .58rem/1 'Montserrat',sans-serif;
+      letter-spacing:.14em;
+      pointer-events:none;
+    }
+    .case-morph-label span{color:#bdd0b5}
+    .case-morph-label b{font:400 .62rem/1 'Cormorant Garamond',serif;color:#fff}
+    .case-morph-label-plan{left:clamp(14px,2vw,25px)}
+    .case-morph-label-result{right:clamp(14px,2vw,25px)}
+    .case-morph-drag-hint{
+      position:absolute;
+      left:50%;
+      bottom:18px;
+      z-index:11;
+      display:flex;
+      align-items:center;
+      gap:9px;
+      transform:translateX(-50%);
+      color:rgba(242,247,239,.7);
+      font:500 .53rem/1 'Montserrat',sans-serif;
+      letter-spacing:.14em;
+      white-space:nowrap;
+      pointer-events:none;
+      transition:opacity .35s ease;
+    }
+    .case-morph-stage.has-interacted .case-morph-drag-hint{opacity:0}
+    .case-morph-drag-hint i{width:18px;height:1px;background:rgba(233,241,228,.42)}
+    .case-morph-stage .case-result-caption{
+      left:auto;
+      right:clamp(15px,2vw,26px);
+      bottom:clamp(14px,2vw,24px);
+      z-index:5;
+      align-items:flex-end;
+      text-align:right;
+      pointer-events:none;
+    }
+    .case-morph-stage .case-result-nav{
+      z-index:12;
+      opacity:.78;
+    }
+    .case-morph-controls{
+      display:grid;
+      grid-template-columns:minmax(0,1fr);
+      gap:7px;
+      padding:0 2px;
+    }
+    .case-morph-process{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      align-items:center;
+      color:rgba(221,230,216,.4);
+      font:500 .56rem/1 'Montserrat',sans-serif;
+      letter-spacing:.13em;
+    }
+    .case-morph-process span{position:relative;transition:color .25s ease}
+    .case-morph-process span:not(:first-child){text-align:center}
+    .case-morph-process span:last-child{text-align:right}
+    .case-morph-process span.is-active{color:rgba(235,242,231,.95)}
+    .case-morph-range{
+      width:100%;
+      height:18px;
+      margin:0;
+      appearance:none;
+      -webkit-appearance:none;
+      background:transparent;
+      cursor:ew-resize;
+    }
+    .case-morph-range::-webkit-slider-runnable-track{
+      height:2px;
+      border-radius:99px;
+      background:linear-gradient(90deg,#a9be9f 0 var(--case-morph-pct),rgba(221,228,216,.18) var(--case-morph-pct) 100%);
+    }
+    .case-morph-range::-webkit-slider-thumb{
+      width:16px;
+      height:16px;
+      margin-top:-7px;
+      border:0;
+      border-radius:50%;
+      appearance:none;
+      -webkit-appearance:none;
+      background:#e8efe3;
+      box-shadow:0 0 0 5px rgba(144,169,133,.2),0 4px 16px rgba(0,0,0,.4);
+    }
+    .case-morph-range::-moz-range-track{height:2px;border:0;background:rgba(221,228,216,.18)}
+    .case-morph-range::-moz-range-progress{height:2px;background:#a9be9f}
+    .case-morph-range::-moz-range-thumb{width:16px;height:16px;border:0;border-radius:50%;background:#e8efe3;box-shadow:0 0 0 5px rgba(144,169,133,.2)}
+    .case-morph-range:focus-visible{outline:1px solid rgba(205,228,198,.68);outline-offset:5px;border-radius:10px}
+    .case-morph-status{
+      display:grid;
+      grid-template-columns:auto minmax(0,1fr) auto;
+      align-items:center;
+      gap:14px;
+      min-height:34px;
+    }
+    .case-morph-status> b{
+      min-width:42px;
+      color:#c9d8c2;
+      font:400 .72rem/1 'Marcellus SC',serif;
+      letter-spacing:.12em;
+    }
+    .case-morph-status .case-plan-note{
+      overflow:hidden;
+      color:rgba(221,228,218,.55);
+      font-size:.66rem;
+      line-height:1.35;
+      white-space:nowrap;
+      text-overflow:ellipsis;
+    }
+    .case-morph-layout>.case-thumbs{
+      min-height:48px;
+      padding:1px 1px 2px;
+      gap:7px;
+    }
+    .case-morph-layout>.case-thumbs .case-thumb{
+      flex:1 0 46px;
+      width:auto;
+      max-width:90px;
+      height:48px;
+    }
+    .case-study-page.is-inview .case-morph-stage{animation:casePanelIn .9s cubic-bezier(.2,.8,.2,1) .12s both}
+
+    @media (max-width:1100px){
+      .case-morph-layout{grid-template-rows:auto minmax(285px,1fr) auto auto}
+      .case-morph-stage{min-height:285px}
+      .case-morph-status .case-plan-note{display:block}
+      .case-morph-layout>.case-thumbs .case-thumb{height:44px}
+    }
+    @media (max-width:760px){
+      .case-morph-layout{grid-template-rows:auto minmax(410px,56svh) auto auto;gap:12px}
+      .case-morph-head{align-items:center}
+      .case-morph-stage{min-height:410px;border-radius:22px}
+      .case-morph-stage .case-plan-card.is-supporting{width:34%;height:27%;top:9%;right:5%}
+      .case-morph-label{top:12px;padding:7px 9px;font-size:.5rem}
+      .case-morph-label-plan{left:12px}.case-morph-label-result{right:12px}
+      .case-morph-stage .case-result-caption{right:13px;bottom:44px;max-width:50%}
+      .case-morph-drag-hint{bottom:17px;font-size:.48rem}
+      .case-morph-process{font-size:.49rem;letter-spacing:.07em}
+      .case-morph-status{grid-template-columns:auto minmax(0,1fr);gap:7px 10px}
+      .case-morph-status .case-pdf-button{grid-column:1/-1;width:100%;justify-content:center}
+      .case-morph-status .case-plan-note{font-size:.6rem}
+      .case-morph-layout>.case-thumbs{margin-right:-4vw;padding-right:4vw;overflow-x:auto}
+      .case-morph-layout>.case-thumbs .case-thumb{flex:0 0 46px;width:46px;height:53px}
+    }
+    @media (max-width:480px){
+      .case-morph-layout{grid-template-rows:auto minmax(365px,52svh) auto auto}
+      .case-morph-stage{min-height:365px}
+      .case-morph-head h3{font-size:.96rem}
+      .case-morph-label b{display:none}
+      .case-morph-process span:nth-child(2),.case-morph-process span:nth-child(3){text-align:center}
+      .case-morph-status .case-plan-note{white-space:normal;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2}
+    }
+    @media (prefers-reduced-motion:reduce){
+      .case-study-page.is-inview .case-morph-stage{animation:none!important}
+      .case-morph-stage .case-morph-plan,.case-morph-stage .case-plan-card,.case-morph-stage .case-result-image{transition:none!important}
+    }
+
   </style>
 </head>
 <body>
@@ -3707,7 +4078,7 @@
     <div class="p1-ui">
       <div class="logo">
         <img class="logo-img" src="assets/huazi-logo-transparent.png" alt="华子 PSAI.CN" />
-        <div class="tagline">Visual Director Portfolio</div>
+        <div class="tagline">Full-Service Photographer Portfolio</div>
       </div>
       <nav class="nav">
         <a class="active" href="#page1">HOME</a><a href="#page2">PROFILE</a><a href="#page3">WORK</a><a href="#page4">CASE</a><a href="tel:18258002747">CONTACT</a><span class="search">⌕</span>
@@ -4466,68 +4837,57 @@
         <button class="case-tab" type="button" role="tab" aria-selected="false" data-case-chapter="2">03 材质层次</button>
       </div>
 
-      <div class="case-body">
-        <article class="case-panel case-plan-panel">
-          <div class="case-panel-head">
-            <div>
-              <div class="case-panel-label">01 / VISUAL PLAN</div>
-              <h3 id="casePlanTitle">竹影与场景氛围</h3>
-            </div>
-            <span class="case-page-count" id="casePlanCount">P.06</span>
+      <div class="case-morph-layout">
+        <div class="case-morph-head">
+          <div>
+            <div class="case-panel-label">VISUAL PLAN → FINAL DELIVERY</div>
+            <h3 id="casePlanTitle">竹影与场景氛围</h3>
+            <span id="caseResultTitle" hidden>竹影与场景氛围｜落地成片</span>
           </div>
-
-          <div class="case-plan-stack" id="casePlanStack" aria-live="polite">
-            <figure class="case-plan-card" data-plan-page="5">
-              <img src="assets/case-study/shanye/plan-05.webp" alt="山野策划案第 5 页，材质与窗帘细节策划" loading="lazy" decoding="async" />
-              <figcaption>策划案 P.05</figcaption>
-            </figure>
-            <figure class="case-plan-card is-active" data-plan-page="6">
-              <img src="assets/case-study/shanye/plan-06.webp" alt="山野策划案第 6 页，竹影氛围策划" loading="lazy" decoding="async" />
-              <figcaption>策划案 P.06</figcaption>
-            </figure>
-            <figure class="case-plan-card" data-plan-page="8">
-              <img src="assets/case-study/shanye/plan-08.webp" alt="山野策划案第 8 页，人物动线策划" loading="lazy" decoding="async" />
-              <figcaption>策划案 P.08</figcaption>
-            </figure>
-            <figure class="case-plan-card" data-plan-page="17">
-              <img src="assets/case-study/shanye/plan-17.webp" alt="山野策划案第 17 页，人物与窗帘互动策划" loading="lazy" decoding="async" />
-              <figcaption>策划案 P.17</figcaption>
-            </figure>
+          <div class="case-result-meta" aria-label="当前成片序号">
+            <b id="caseResultIndex">01</b><span>/</span><span id="caseResultTotal">10</span>
           </div>
-
-          <footer class="case-plan-footer">
-            <p class="case-plan-note" id="casePlanNote">以竹影、自然材质与低饱和空间建立山野叙事基调。</p>
-            <button class="case-pdf-button" id="openPlanPdf" type="button">查看完整策划 PDF <span aria-hidden="true">↗</span></button>
-          </footer>
-        </article>
-
-        <div class="case-flow" aria-label="从策划到落地流程">
-          <div class="case-flow-step"><b>01</b>视觉策划</div>
-          <div class="case-flow-step"><b>02</b>场景搭建</div>
-          <div class="case-flow-step"><b>03</b>灯光执行</div>
-          <div class="case-flow-step"><b>04</b>最终交付</div>
         </div>
 
-        <article class="case-panel case-result-panel">
-          <div class="case-panel-head">
-            <div>
-              <div class="case-panel-label">02 / FINAL DELIVERY</div>
-              <h3 id="caseResultTitle">氛围落地成片</h3>
-            </div>
-            <div class="case-result-meta"><b id="caseResultIndex">01</b><span>/</span><span id="caseResultTotal">10</span></div>
-          </div>
-
-          <div class="case-result-stage" id="caseResultStage" tabindex="0" aria-label="山野最终成片，可拖动或使用左右方向键切换">
-            <figure class="case-result-figure">
-              <img class="case-result-image" id="caseResultImage" src="assets/case-study/shanye/landing-01.webp" alt="山野落地成片：竹影入室" decoding="async" />
-              <figcaption class="case-result-caption"><span id="caseResultTag">竹影氛围</span><b id="caseResultCaption">竹影入室</b></figcaption>
+        <div class="case-morph-stage" id="caseResultStage" tabindex="0" aria-label="拖动查看策划稿叠化为最终成片">
+          <div class="case-plan-stack case-morph-plan" id="casePlanStack" aria-live="polite">
+            <figure class="case-plan-card is-active" data-plan-slot="0">
+              <img src="assets/case-study/shanye/plan-01.webp" alt="山野策划案第 1 页" loading="lazy" decoding="async" />
+              <figcaption>策划案 P.01</figcaption>
             </figure>
-            <button class="case-result-nav case-result-prev" id="caseResultPrev" type="button" aria-label="上一张">‹</button>
-            <button class="case-result-nav case-result-next" id="caseResultNext" type="button" aria-label="下一张">›</button>
+            <figure class="case-plan-card" data-plan-slot="1">
+              <img src="assets/case-study/shanye/plan-02.webp" alt="山野策划案第 2 页" loading="lazy" decoding="async" />
+              <figcaption>策划案 P.02</figcaption>
+            </figure>
           </div>
 
-          <div class="case-thumbs" id="caseThumbs" aria-label="山野成片缩略图"></div>
-        </article>
+          <figure class="case-morph-result">
+            <div class="case-result-backdrop" id="caseResultBackdrop" aria-hidden="true"></div>
+            <img class="case-result-image" id="caseResultImage" src="assets/case-study/shanye/landing-01.webp" alt="山野落地成片：竹影入室" decoding="async" />
+            <figcaption class="case-result-caption"><span id="caseResultTag">竹影氛围</span><b id="caseResultCaption">竹影入室</b></figcaption>
+          </figure>
+
+          <div class="case-morph-edge" aria-hidden="true"><span></span></div>
+          <div class="case-morph-label case-morph-label-plan"><span>01</span>视觉策划 <b id="casePlanCount">P.06</b></div>
+          <div class="case-morph-label case-morph-label-result"><span>04</span>最终交付</div>
+          <div class="case-morph-drag-hint" aria-hidden="true"><i></i><span>拖动查看转化过程</span><i></i></div>
+          <button class="case-result-nav case-result-prev" id="caseResultPrev" type="button" aria-label="上一张成片">‹</button>
+          <button class="case-result-nav case-result-next" id="caseResultNext" type="button" aria-label="下一张成片">›</button>
+        </div>
+
+        <div class="case-morph-controls">
+          <div class="case-morph-process" aria-label="从策划到落地流程">
+            <span class="is-active">视觉策划</span><span>场景搭建</span><span>灯光执行</span><span>最终交付</span>
+          </div>
+          <input class="case-morph-range" id="caseMorphRange" type="range" min="0" max="100" value="0" aria-label="拖动查看从策划到落地的过程" />
+          <div class="case-morph-status">
+            <b id="caseMorphPercent">00%</b>
+            <p class="case-plan-note" id="casePlanNote">以竹影、自然材质与低饱和空间建立山野叙事基调。</p>
+            <button class="case-pdf-button" id="openPlanPdf" type="button">查看完整策划 PDF <span aria-hidden="true">↗</span></button>
+          </div>
+        </div>
+
+        <div class="case-thumbs" id="caseThumbs" aria-label="山野成片缩略图"></div>
       </div>
     </div>
   </section>
@@ -4545,7 +4905,7 @@
       <div class="art-sub">让每一次视觉，成为品牌被记住的证据。</div>
       <div class="p2blocks">
         <div class="col">
-          <div class="line">HUAZI VISUAL DIRECTOR PORTFOLIO</div>
+          <div class="line">HUAZI FULL-SERVICE PHOTOGRAPHER PORTFOLIO</div>
           <div class="line">Commercial Photography</div>
           <div class="line">AI Image Production</div>
         </div>
@@ -5930,49 +6290,82 @@
         {
           title:'竹影与场景氛围',
           note:'以竹影、自然材质与低饱和空间建立山野叙事基调。',
-          plans:[6], photos:[0,3,4]
+          plans:[1,2,3,4,6], photos:[0,3,4]
         },
         {
           title:'人物在空间中的动线',
           note:'让人物的进入、停驻与开合动作，成为展示帘布尺度与垂感的路径。',
-          plans:[8,17], photos:[1,2,7,9]
+          plans:[6,7,8,9,10,17], photos:[1,2,7,9]
         },
         {
           title:'材质、光线与层次',
           note:'利用侧光、透光与前后景关系，呈现面料纹理、厚度和空间层次。',
-          plans:[5], photos:[5,6,8]
+          plans:[5,11,12,13,14,15,16,18,19], photos:[5,6,8]
         }
+      ];
+      const photoPlans = [
+        [6],
+        [8],
+        [3],
+        [4],
+        [17],
+        [3],
+        [7],
+        [17],
+        [5],
+        [1]
       ];
 
       const tabs = Array.from(page.querySelectorAll('[data-case-chapter]'));
-      const planCards = Array.from(page.querySelectorAll('[data-plan-page]'));
+      const planCards = Array.from(page.querySelectorAll('[data-plan-slot]'));
       const planTitle = document.getElementById('casePlanTitle');
       const planCount = document.getElementById('casePlanCount');
       const planNote = document.getElementById('casePlanNote');
       const resultTitle = document.getElementById('caseResultTitle');
       const resultStage = document.getElementById('caseResultStage');
       const resultImage = document.getElementById('caseResultImage');
+      const resultBackdrop = document.getElementById('caseResultBackdrop');
       const resultTag = document.getElementById('caseResultTag');
       const resultCaption = document.getElementById('caseResultCaption');
       const resultIndex = document.getElementById('caseResultIndex');
       const thumbs = document.getElementById('caseThumbs');
       const prev = document.getElementById('caseResultPrev');
       const next = document.getElementById('caseResultNext');
+      const morphRange = document.getElementById('caseMorphRange');
+      const morphPercent = document.getElementById('caseMorphPercent');
+      const processSteps = Array.from(page.querySelectorAll('.case-morph-process span'));
       const pdfOpen = document.getElementById('openPlanPdf');
       const pdfClose = document.getElementById('closePlanPdf');
       const pdfModal = document.getElementById('casePdfModal');
       const pdfFrame = document.getElementById('casePdfFrame');
       const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const planPhaseEnd = 38;
+      const morphDuration = 7200;
+      const morphHold = 1200;
       let activeChapter = 0;
       let activePhoto = 0;
+      let activePlanSlot = 0;
+      let displayedPlanIndex = -1;
+      let morphValue = 0;
+      let morphCycleStart = 0;
+      let resumeAt = 0;
       let switchTimer = 0;
-      let autoTimer = 0;
       let pageVisible = false;
       let paused = false;
       let pointerStartX = 0;
       let pointerStartY = 0;
+      let pointerStartMorph = 0;
       let pointerMoved = false;
+      let pointerActive = false;
       let savedOverflow = '';
+
+      function activePlanPages(){
+        return photoPlans[activePhoto] || chapters[activeChapter].plans;
+      }
+
+      function chapterForPhoto(index){
+        return Math.max(0, chapters.findIndex(chapter => chapter.photos.includes(index)));
+      }
 
       photos.forEach((photo, index) => {
         const button = document.createElement('button');
@@ -5981,22 +6374,82 @@
         button.dataset.casePhoto = String(index);
         button.setAttribute('aria-label', `查看成片 ${String(index + 1).padStart(2,'0')}：${photo.title}`);
         button.innerHTML = `<img src="${photo.thumb}" alt="" loading="lazy" decoding="async">`;
-        button.addEventListener('click', () => setPhoto(index, true));
+        button.addEventListener('click', () => selectPhotoPair(index, true));
         thumbs?.appendChild(button);
       });
       const thumbButtons = Array.from(thumbs?.querySelectorAll('.case-thumb') || []);
 
-      function setPlanStack(chapter){
-        const activePages = chapter.plans.map(Number);
-        planCards.forEach(card => {
-          const pageNumber = Number(card.dataset.planPage);
-          const order = activePages.indexOf(pageNumber);
-          card.classList.toggle('is-active', order === 0);
-          card.classList.toggle('is-supporting', order === 1);
-          card.classList.toggle('is-secondary', order < 0 && pageNumber === 5 + activeChapter);
-          card.setAttribute('aria-hidden', order < 0 ? 'true' : 'false');
-        });
-        planCount.textContent = activePages.map(number => `P.${String(number).padStart(2,'0')}`).join(' / ');
+      function setMorph(value, userInitiated = false){
+        morphValue = Math.max(0, Math.min(100, Number(value) || 0));
+        const revealValue = morphValue <= planPhaseEnd ? 0 : (morphValue - planPhaseEnd) / (100 - planPhaseEnd) * 100;
+        const ratio = revealValue / 100;
+        const percentage = `${morphValue.toFixed(2)}%`;
+        const revealPercentage = `${revealValue.toFixed(2)}%`;
+        const edgeOpacity = Math.max(0, Math.min(1, revealValue / 10, (100 - revealValue) / 10));
+        resultStage?.style.setProperty('--case-morph', ratio.toFixed(4));
+        resultStage?.style.setProperty('--case-morph-pct', revealPercentage);
+        resultStage?.style.setProperty('--case-morph-clip', `${(100 - revealValue).toFixed(2)}%`);
+        resultStage?.style.setProperty('--case-edge-opacity', edgeOpacity.toFixed(3));
+        morphRange?.style.setProperty('--case-morph-pct', percentage);
+        if (morphRange) morphRange.value = String(Math.round(morphValue));
+        if (morphPercent) morphPercent.textContent = `${String(Math.round(morphValue)).padStart(2,'0')}%`;
+        updatePlanForMorph(morphValue);
+        const activeStep = Math.min(processSteps.length - 1, Math.floor((morphValue + .01) / (100 / processSteps.length)));
+        processSteps.forEach((step, index) => step.classList.toggle('is-active', index <= activeStep));
+        if (userInitiated) {
+          resultStage?.classList.add('has-interacted');
+          resumeAt = performance.now() + 2300;
+          morphCycleStart = 0;
+        }
+      }
+
+      function showPlanPage(index, immediate = false){
+        const pages = activePlanPages();
+        const pageIndex = Math.max(0, Math.min(pages.length - 1, Number(index) || 0));
+        if (!immediate && pageIndex === displayedPlanIndex) return;
+        const pageNumber = pages[pageIndex];
+        const nextSlotIndex = immediate ? 0 : 1 - activePlanSlot;
+        const currentSlot = planCards[activePlanSlot];
+        const nextSlot = planCards[nextSlotIndex];
+        const image = nextSlot?.querySelector('img');
+        const caption = nextSlot?.querySelector('figcaption');
+        if (!nextSlot || !image) return;
+
+        const source = `${base}plan-${String(pageNumber).padStart(2,'0')}.webp`;
+        const requestKey = `${activeChapter}-${pageIndex}-${pageNumber}`;
+        image.dataset.planRequest = requestKey;
+        image.alt = `山野策划案第 ${pageNumber} 页：${chapters[activeChapter].title}`;
+        if (caption) caption.textContent = `策划案 P.${String(pageNumber).padStart(2,'0')}`;
+        if (planCount) planCount.textContent = pages.length === 1
+          ? `P.${String(pageNumber).padStart(2,'0')}`
+          : `P.${String(pageNumber).padStart(2,'0')} · ${String(pageIndex + 1).padStart(2,'0')}/${String(pages.length).padStart(2,'0')}`;
+
+        const activate = () => {
+          if (image.dataset.planRequest !== requestKey) return;
+          planCards.forEach((card, slotIndex) => {
+            const active = slotIndex === nextSlotIndex;
+            card.classList.toggle('is-active', active);
+            card.setAttribute('aria-hidden', active ? 'false' : 'true');
+          });
+          activePlanSlot = nextSlotIndex;
+        };
+        if (image.getAttribute('src') !== source) image.setAttribute('src', source);
+        if (immediate || image.complete) requestAnimationFrame(activate);
+        else image.addEventListener('load', activate, {once:true});
+        displayedPlanIndex = pageIndex;
+      }
+
+      function updatePlanForMorph(value){
+        const pages = activePlanPages();
+        const planProgress = Math.max(0, Math.min(1, value / planPhaseEnd));
+        const pageIndex = Math.min(pages.length - 1, Math.floor(planProgress * pages.length));
+        showPlanPage(pageIndex, false);
+      }
+
+      function setPlanStack(){
+        displayedPlanIndex = -1;
+        activePlanSlot = 0;
+        showPlanPage(0, true);
       }
 
       function updateThumbs(){
@@ -6020,15 +6473,19 @@
         const photo = photos[activePhoto];
         resultImage.src = photo.src;
         resultImage.alt = photo.alt;
+        if (resultBackdrop) resultBackdrop.style.backgroundImage = `url("${photo.src}")`;
         resultTag.textContent = photo.tag;
         resultCaption.textContent = photo.title;
         resultIndex.textContent = String(activePhoto + 1).padStart(2,'0');
         updateThumbs();
       }
 
-      function setPhoto(index, userInitiated){
+      function setPhoto(index, userInitiated = false){
         window.clearTimeout(switchTimer);
-        if (userInitiated) restartAuto();
+        activePhoto = (index + photos.length) % photos.length;
+        setPlanStack();
+        setMorph(0, userInitiated);
+        morphCycleStart = 0;
         if (reduceMotion) {
           renderPhoto(index);
           return;
@@ -6037,10 +6494,10 @@
         switchTimer = window.setTimeout(() => {
           renderPhoto(index);
           requestAnimationFrame(() => resultImage.classList.remove('is-switching'));
-        }, 150);
+        }, 140);
       }
 
-      function setChapter(index){
+      function setChapter(index, userInitiated = true, photoOverride = null){
         activeChapter = Math.max(0, Math.min(chapters.length - 1, Number(index) || 0));
         const chapter = chapters[activeChapter];
         tabs.forEach((tab, tabIndex) => {
@@ -6049,28 +6506,47 @@
           tab.setAttribute('aria-selected', selected ? 'true' : 'false');
         });
         planTitle.textContent = chapter.title;
-        resultTitle.textContent = `${chapter.title}｜落地成片`;
+        if (resultTitle) resultTitle.textContent = `${chapter.title}｜落地成片`;
         planNote.textContent = chapter.note;
-        setPlanStack(chapter);
-        setPhoto(chapter.photos[0], true);
+        setPhoto(photoOverride ?? chapter.photos[0], userInitiated);
       }
 
-      function adjacent(direction){
-        setPhoto(activePhoto + direction, true);
+      function selectPhotoPair(index, userInitiated = true){
+        const normalized = (index + photos.length) % photos.length;
+        const nextChapter = chapterForPhoto(normalized);
+        if (nextChapter !== activeChapter) setChapter(nextChapter, userInitiated, normalized);
+        else setPhoto(normalized, userInitiated);
+      }
+
+      function adjacent(direction, userInitiated = true){
+        selectPhotoPair(activePhoto + direction, userInitiated);
       }
 
       function canAutoPlay(){
         const lightboxOpen = document.getElementById('workLightbox')?.classList.contains('is-open');
         const pdfOpenNow = pdfModal?.classList.contains('is-open');
-        return !reduceMotion && pageVisible && !paused && !document.hidden && !lightboxOpen && !pdfOpenNow;
+        return !reduceMotion && pageVisible && !paused && !pointerActive && !document.hidden && !lightboxOpen && !pdfOpenNow;
       }
 
-      function restartAuto(){
-        window.clearInterval(autoTimer);
-        if (reduceMotion) return;
-        autoTimer = window.setInterval(() => {
-          if (canAutoPlay()) setPhoto(activePhoto + 1, false);
-        }, 4300);
+      function animateMorph(now){
+        if (!canAutoPlay() || now < resumeAt) {
+          morphCycleStart = 0;
+          requestAnimationFrame(animateMorph);
+          return;
+        }
+        if (!morphCycleStart) morphCycleStart = now - (morphValue / 100) * morphDuration;
+        const elapsed = now - morphCycleStart;
+        if (elapsed <= morphDuration) {
+          const progress = elapsed / morphDuration;
+          const eased = progress < .5 ? 2 * progress * progress : 1 - Math.pow(-2 * progress + 2, 2) / 2;
+          setMorph(eased * 100, false);
+        } else if (elapsed <= morphDuration + morphHold) {
+          setMorph(100, false);
+        } else {
+          adjacent(1, false);
+          morphCycleStart = now;
+        }
+        requestAnimationFrame(animateMorph);
       }
 
       function openCurrentPhoto(){
@@ -6100,62 +6576,77 @@
         pdfOpen?.focus({preventScroll:true});
       }
 
-      tabs.forEach(tab => tab.addEventListener('click', () => setChapter(tab.dataset.caseChapter)));
-      prev?.addEventListener('click', event => { event.stopPropagation(); adjacent(-1); });
-      next?.addEventListener('click', event => { event.stopPropagation(); adjacent(1); });
+      tabs.forEach(tab => tab.addEventListener('click', () => setChapter(tab.dataset.caseChapter, true)));
+      prev?.addEventListener('click', event => { event.stopPropagation(); adjacent(-1, true); });
+      next?.addEventListener('click', event => { event.stopPropagation(); adjacent(1, true); });
       resultImage?.addEventListener('click', openCurrentPhoto);
-      resultStage?.addEventListener('mouseenter', () => { paused = true; });
-      resultStage?.addEventListener('mouseleave', () => { paused = false; });
+      morphRange?.addEventListener('input', event => setMorph(event.currentTarget.value, true));
+      morphRange?.addEventListener('pointerdown', () => { paused = true; });
+      morphRange?.addEventListener('pointerup', () => { paused = false; resumeAt = performance.now() + 1800; });
+      morphRange?.addEventListener('change', () => { paused = false; resumeAt = performance.now() + 1800; });
       resultStage?.addEventListener('focusin', () => { paused = true; });
-      resultStage?.addEventListener('focusout', () => { paused = false; });
+      resultStage?.addEventListener('focusout', () => { paused = false; resumeAt = performance.now() + 900; });
       resultStage?.addEventListener('keydown', event => {
-        if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight' && event.key !== 'Enter') return;
+        if (!['ArrowLeft','ArrowRight','Home','End','Enter'].includes(event.key)) return;
         event.preventDefault();
         if (event.key === 'Enter') openCurrentPhoto();
-        else adjacent(event.key === 'ArrowLeft' ? -1 : 1);
+        else if (event.key === 'Home') setMorph(0, true);
+        else if (event.key === 'End') setMorph(100, true);
+        else setMorph(morphValue + (event.key === 'ArrowLeft' ? -10 : 10), true);
       });
       resultStage?.addEventListener('pointerdown', event => {
         if (event.target.closest('button')) return;
+        pointerActive = true;
         pointerStartX = event.clientX;
         pointerStartY = event.clientY;
+        pointerStartMorph = morphValue;
         pointerMoved = false;
-        resultStage.classList.add('is-dragging');
+        resultStage.classList.add('is-dragging','has-interacted');
         resultStage.setPointerCapture?.(event.pointerId);
       }, {passive:true});
       resultStage?.addEventListener('pointermove', event => {
+        if (!pointerActive) return;
         const dx = event.clientX - pointerStartX;
         const dy = event.clientY - pointerStartY;
-        if (Math.abs(dx) > 7 && Math.abs(dx) > Math.abs(dy)) pointerMoved = true;
+        if (Math.abs(dx) > 5 && Math.abs(dx) > Math.abs(dy)) {
+          pointerMoved = true;
+          const width = Math.max(1, resultStage.clientWidth);
+          setMorph(pointerStartMorph + dx / width * 112, true);
+        }
       }, {passive:true});
       resultStage?.addEventListener('pointerup', event => {
-        const dx = event.clientX - pointerStartX;
-        const dy = event.clientY - pointerStartY;
+        pointerActive = false;
         resultStage.classList.remove('is-dragging');
         if (resultStage.hasPointerCapture?.(event.pointerId)) resultStage.releasePointerCapture(event.pointerId);
-        if (pointerMoved && Math.abs(dx) > 44 && Math.abs(dx) > Math.abs(dy)) adjacent(dx < 0 ? 1 : -1);
-        window.setTimeout(() => { pointerMoved = false; }, 80);
+        resumeAt = performance.now() + 2200;
+        window.setTimeout(() => { pointerMoved = false; }, 100);
       }, {passive:true});
-      resultStage?.addEventListener('pointercancel', () => resultStage.classList.remove('is-dragging'), {passive:true});
+      resultStage?.addEventListener('pointercancel', event => {
+        pointerActive = false;
+        resultStage.classList.remove('is-dragging');
+        if (resultStage.hasPointerCapture?.(event.pointerId)) resultStage.releasePointerCapture(event.pointerId);
+      }, {passive:true});
       pdfOpen?.addEventListener('click', openPdf);
       pdfClose?.addEventListener('click', closePdf);
       pdfModal?.addEventListener('click', event => { if (event.target === pdfModal) closePdf(); });
       document.addEventListener('keydown', event => {
         if (event.key === 'Escape' && pdfModal?.classList.contains('is-open')) closePdf();
       });
-      document.addEventListener('visibilitychange', () => { if (!document.hidden) restartAuto(); });
 
       if ('IntersectionObserver' in window) {
         new IntersectionObserver(entries => {
           pageVisible = entries[0]?.isIntersecting && entries[0].intersectionRatio > .18;
           page.classList.toggle('is-inview', pageVisible);
+          if (pageVisible) morphCycleStart = 0;
         }, {threshold:[0,.18,.45]}).observe(page);
       } else {
         pageVisible = true;
         page.classList.add('is-inview');
       }
 
-      setChapter(0);
-      restartAuto();
+      setChapter(0, false);
+      setMorph(reduceMotion ? 55 : 0, false);
+      requestAnimationFrame(animateMorph);
     })();
 
     (function initLightPillar(){
