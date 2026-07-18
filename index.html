@@ -362,6 +362,7 @@
       color:rgba(245,250,255,.86);
     }
     .tm-profile figcaption b{font-family:'Cinzel';font-size:1rem;color:#f7bd3d;letter-spacing:.08em}
+    .tm-mobile-identity{display:none}
     .tm-kicker,.tm-eyebrow{
       font-family:'Montserrat',sans-serif;
       font-size:.72rem;
@@ -944,15 +945,132 @@
     }
     @media (max-width: 680px){
       html{scroll-snap-type:none}
-      .time-machine{padding:58px 14px;gap:18px}
-      .tm-copy{padding:16px 14px}
-      .tm-profile{max-width:260px;margin-inline:auto}
-      .tm-stage{min-height:520px;border-radius:26px}
-      .tm-stage::before{inset:22px 7%}
-      .tm-timeline{grid-template-columns:repeat(2,1fr)}
-      .tm-panel{gap:12px}
-      .tm-card{border-radius:22px;padding:15px}
-      .tm-title{font-size:15vw}
+      .time-machine{padding:38px 14px 56px;gap:14px}
+      .tm-copy{
+        display:grid;
+        grid-template-columns:82px minmax(0,1fr);
+        grid-template-areas:
+          "photo identity"
+          "photo lead"
+          "controls controls";
+        column-gap:14px;
+        align-items:start;
+        padding:14px;
+        border-left:0;
+        border-radius:24px;
+        background:rgba(7,13,23,.56);
+        border:1px solid rgba(220,238,255,.12);
+        box-shadow:0 18px 54px rgba(0,0,0,.24);
+        backdrop-filter:blur(12px);
+        -webkit-backdrop-filter:blur(12px);
+      }
+      .tm-profile{
+        grid-area:photo;
+        width:82px;
+        height:108px;
+        max-width:none;
+        margin:0;
+        border-radius:17px;
+      }
+      .tm-profile figcaption{display:none}
+      .tm-mobile-identity{
+        grid-area:identity;
+        display:flex;
+        align-items:center;
+        flex-wrap:wrap;
+        gap:6px;
+        min-width:0;
+      }
+      .tm-mobile-identity strong{
+        width:100%;
+        font-family:'Cinzel','Noto Serif SC',serif;
+        font-size:1.35rem;
+        line-height:1;
+        letter-spacing:.08em;
+        color:#fff;
+      }
+      .tm-mobile-identity span{
+        display:inline-flex;
+        align-items:center;
+        min-height:26px;
+        padding:5px 9px;
+        border-radius:999px;
+        background:rgba(247,189,61,.12);
+        border:1px solid rgba(247,189,61,.25);
+        font-family:'Montserrat','Noto Sans SC',sans-serif;
+        font-size:.64rem;
+        line-height:1;
+        letter-spacing:.06em;
+        color:rgba(247,235,204,.92);
+      }
+      .tm-kicker,.tm-title,.tm-emphasis,.tm-skill-tags{display:none}
+      .tm-lead{
+        grid-area:lead;
+        margin-top:9px;
+        max-width:none;
+        font-family:'Noto Sans SC','Montserrat',sans-serif;
+        font-size:.82rem;
+        line-height:1.6;
+        color:rgba(235,244,251,.76);
+        display:-webkit-box;
+        -webkit-box-orient:vertical;
+        -webkit-line-clamp:3;
+        overflow:hidden;
+      }
+      .tm-controls,.tm-stage{display:none}
+      .tm-panel{gap:10px}
+      .tm-card{border-radius:20px;padding:14px}
+      .tm-panel > .tm-card:first-child{
+        padding:0;
+        background:transparent;
+        border:0;
+        box-shadow:none;
+        backdrop-filter:none;
+        -webkit-backdrop-filter:none;
+      }
+      .tm-panel > .tm-card:last-child{display:none}
+      .tm-eyebrow,.tm-slider-wrap{display:none}
+      .tm-timeline{
+        display:grid;
+        grid-template-columns:repeat(3,minmax(0,1fr));
+        gap:8px;
+        margin-top:0;
+      }
+      .tm-node{
+        min-width:0;
+        min-height:44px;
+        padding:10px 6px;
+        border-radius:14px;
+        font-size:.72rem;
+      }
+      .tm-node[data-era="3"]{display:none}
+      .tm-card h3{font-size:1rem;margin-bottom:10px}
+      .tm-exp-title{
+        display:grid;
+        gap:5px;
+        padding-bottom:9px;
+        margin-bottom:10px;
+      }
+      .tm-exp-title strong{font-size:1rem}
+      .tm-exp-title span{font-size:.68rem;line-height:1.5;white-space:normal}
+      .tm-exp-summary{min-height:0;font-size:.82rem;line-height:1.65}
+      .tm-card h4{margin:14px 0 8px;font-size:.78rem;color:rgba(247,189,61,.88)}
+      .tm-evidence-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}
+      .tm-evidence{
+        min-height:52px;
+        padding:9px 6px;
+        border-radius:14px;
+        text-align:center;
+      }
+      .tm-evidence strong{
+        margin:0;
+        font-family:'Noto Sans SC','Montserrat',sans-serif;
+        font-size:.68rem;
+        line-height:1.35;
+        letter-spacing:0;
+      }
+      .tm-evidence span{display:none}
+      #page2 .border-glow-layer{display:none!important}
       .ai-gallery{padding:62px 14px 58px}
       .ai-gallery::before{inset:14px 8px;border-radius:24px}
       .ai-title{font-size:18vw}
@@ -4123,6 +4241,11 @@
           <img src="assets/profile-huazi-resume.webp" alt="华子个人形象照" loading="lazy" />
           <figcaption><b>HuaZi</b><span>Full-Service Photographer</span></figcaption>
         </figure>
+        <div class="tm-mobile-identity" aria-label="华子，全案摄影师，十年以上经验">
+          <strong>华子</strong>
+          <span>全案摄影师</span>
+          <span>10年+经验</span>
+        </div>
         <div class="tm-kicker">PORTFOLIO / 个人履历</div>
         <h2 class="tm-title">ABOUT ME<br><span>视觉全案师</span></h2>
         <p class="tm-lead">拥有 <strong>10年+</strong> 视觉设计与摄影经验，能力横跨品牌视觉建设与电商商业转化。比纯摄影更懂设计，比传统设计更具落地性，擅长把模糊的营销需求转化为可执行的视觉方案。</p>
@@ -5021,7 +5144,7 @@
       const ctx = hourglassCanvas.getContext('2d');
       const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       const isMobile = window.matchMedia('(max-width: 680px)').matches;
-      const particleCount = isMobile ? 340 : 860;
+      const particleCount = isMobile ? 260 : 860;
       const palette = ['#f7bd3d','#b7e8ff','#8ec7ff','#ac67ff','#ffffff'];
 
       function resizeCanvas(){
@@ -5047,8 +5170,8 @@
         return { x: cx + (Math.random() - .5) * spread * 2, y };
       }
       function sampleTextPoints(text){
-        const w = Math.max(360, hourglassCanvas.clientWidth || 600);
-        const h = Math.max(420, hourglassCanvas.clientHeight || 680);
+        const w = Math.max(isMobile ? 260 : 360, hourglassCanvas.clientWidth || 600);
+        const h = Math.max(isMobile ? 280 : 420, hourglassCanvas.clientHeight || 680);
         const off = document.createElement('canvas');
         const scale = 0.5;
         off.width = Math.floor(w * scale);
@@ -5486,6 +5609,10 @@
         if (SKIP_TAGS.has(element.tagName)) return false;
         if (element.classList.contains('border-glow-layer')) return false;
         if (element.closest('#page1')) {
+          removeGlow(element);
+          return false;
+        }
+        if (window.matchMedia('(max-width:680px)').matches && element.closest('#page2')) {
           removeGlow(element);
           return false;
         }
